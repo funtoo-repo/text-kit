@@ -1,4 +1,3 @@
-# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
@@ -11,26 +10,23 @@ S=${WORKDIR}/${MY_P}
 
 DESCRIPTION="Shell scripts to manage DocBook documents"
 HOMEPAGE="https://sourceware.org/docbook-tools/"
-SRC_URI="ftp://sourceware.org/pub/docbook-tools/new-trials/SOURCES/${MY_P}.tar.gz"
-
+SRC_URI="https://sourceware.org/pub/docbook-tools/new-trials/SOURCES/docbook-utils-0.6.14.tar.gz -> docbook-utils-0.6.14.tar.gz
+"
 LICENSE="GPL-2"
+
 SLOT="0"
-KEYWORDS="alpha amd64 arm arm64 hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos"
+KEYWORDS="*"
 IUSE="jadetex"
 
 DEPEND=">=dev-lang/perl-5
 	app-text/docbook-dsssl-stylesheets
 	app-text/openjade
 	dev-perl/SGMLSpm
-	~app-text/docbook-xml-simple-dtd-4.1.2.4
-	~app-text/docbook-xml-simple-dtd-1.0
+	app-text/docbook-xml-simple-dtd
 	app-text/docbook-xml-dtd
-	~app-text/docbook-sgml-dtd-3.0
-	~app-text/docbook-sgml-dtd-3.1
-	~app-text/docbook-sgml-dtd-4.0
-	~app-text/docbook-sgml-dtd-4.1
-	~app-text/docbook-sgml-dtd-4.2
-	~app-text/docbook-sgml-dtd-4.4
+    ~app-text/docbook-sgml-dtd-3.1
+    ~app-text/docbook-sgml-dtd-4.5
+	app-text/docbook-sgml-dtd
 	jadetex? ( app-text/jadetex )
 	userland_GNU? ( sys-apps/which )
 	|| (

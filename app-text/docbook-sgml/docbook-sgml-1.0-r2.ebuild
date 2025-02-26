@@ -1,4 +1,3 @@
-# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -15,5 +14,5 @@ RDEPEND="app-text/sgml-common app-text/openjade
 	>=app-text/docbook-sgml-utils-0.6.6
 	~app-text/docbook-sgml-dtd-3.0
 	~app-text/docbook-sgml-dtd-3.1
-	~app-text/docbook-sgml-dtd-4.0
-	~app-text/docbook-sgml-dtd-4.1"
+	~app-text/docbook-sgml-dtd-4.1
+	~app-text/docbook-sgml-dtd-4.5"
